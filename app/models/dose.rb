@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Description/Explanation of Dose class
 class Dose < ApplicationRecord
   belongs_to :cocktail
   belongs_to :ingredient

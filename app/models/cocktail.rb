@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Description/Explanation of Cocktail class
 class Cocktail < ApplicationRecord
   has_many :doses, dependent: :destroy
   has_many :ingredients, through: :doses
