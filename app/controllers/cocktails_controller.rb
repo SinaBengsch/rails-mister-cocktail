@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Description/Explanation of CocktailController
 class CocktailsController < ApplicationController
   def index
     @cocktails = Cocktail.all
