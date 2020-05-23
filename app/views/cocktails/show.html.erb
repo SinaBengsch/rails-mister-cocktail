@@ -1,7 +1,12 @@
-<div>
+<div class="container"><div>
   <h1><%= @cocktail.name %></h1>
 </div>
-<div>
+
+  <!-- app/views/articles/index.html.erb -->
+<%#= cl_image_tag("kabmhsgjinxfuyirknct",
+      width: 400, height: 300, crop: :fill) %>
+
+
   <% @cocktail.doses.each do |dose| %>
               <li>
                 <td><%= dose.ingredient.name %></td>
@@ -13,9 +18,10 @@
                 </td>
               </li>
             <% end %>
-</div>
+
 
 <div>
-  <%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail) %>
-  <%= link_to 'Back to overview', cocktails_path %>
+  <%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail), { class: "btn btn-outline-success" } %>
+  <%= link_to 'Back to overview', cocktails_path, { class: "btn btn-outline-success" } %>
+</div>
 </div>

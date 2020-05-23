@@ -1,13 +1,24 @@
-<div>
-
-  <h1>CocktailHour</h1>
-
-  <ul>
-    <% @cocktails.each do |cocktail| %>
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-    <% end %>
-  </ul>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= image_path 'banner1.jpg' %>');">
+  <div class="banner-content">
+    <h1>CocktailHour</h1>
+    <p>Find the right cocktail for your next party</p>
+    <div class="btncocktail"><%= link_to "Add cocktail recipe", new_cocktail_path, class: "btn btn-success" %>
 </div>
-<div class="btn btn-outline-secondary">
-  <%= link_to 'Add cocktail recipe', new_cocktail_path%>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_path 'random.jpg' %>');">
+          <div class="card-description">
+            <h2><%= cocktail.name %></h2>
+          </div>
+
+          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>
