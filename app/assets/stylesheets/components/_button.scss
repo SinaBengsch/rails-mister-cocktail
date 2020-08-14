@@ -1,13 +1,30 @@
 .btn-pink {
   text-decoration: none;
-  background-color: #F97068;
+  background-color: #F5584E;
   color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   padding: 8px 24px;
   border-radius: 4px;
   transition: 0.3s;
 }
 
 .btn-pink:hover {
+  text-decoration: none;
+  background-color: #D9625B;
+  color: white;
+}
+
+.btn-pink-outline {
+  text-decoration: none;
+  color: #F5584E;
+  border: 1px solid #F5584E;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  padding: 8px 24px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-pink-outline:hover {
   text-decoration: none;
   background-color: #D9625B;
   color: white;
