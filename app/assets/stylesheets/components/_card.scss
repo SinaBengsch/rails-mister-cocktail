@@ -29,3 +29,11 @@
 .card-link:hover {
   opacity: 0.1;
 }
+
+.card-big {
+  display: flex;
+}
+
+.card-big img {
+  width: 480px;
+}
