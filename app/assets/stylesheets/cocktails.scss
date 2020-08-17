@@ -1,3 +1,15 @@
 // Place all the styles related to the cocktails controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+.cocktail-content {
+  margin-bottom: 24px;
+}
+
+.cocktail-content p {
+  font-weight: lighter;
+}
+
+.destroy_dose {
+  color: #F5584E;
+}
