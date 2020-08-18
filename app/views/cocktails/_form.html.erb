@@ -1,5 +1,6 @@
 
 <%= simple_form_for(cocktail) do |f| %>
+
   <%= f.error_notification %>
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
@@ -7,12 +8,12 @@
     <%= f.input :name %>
     <%= f.input :description %>
     <%= f.input :instruction %>
-    <%= f.input :prep_time %>
+    <%= f.input :prep_time, collection: 10..30, selected: 10, hint: '(min)' %>
     <%= f.input :alcohol %>
   </div>
 
-  <div class="form-actions">
-    <%= f.button :submit, { class: "btn btn-outline-success" } %>   <%= link_to 'Back to overview', cocktails_path, { class: "btn btn-outline-success" }  %>
-
+  <div class="btn-next-to-each-other">
+    <%= f.button :submit, class:"btn-pink" %>
+    <%= link_to '< Back to overview', cocktails_path, class:"btn-pink-outline"  %>
   </div>
 <% end %>

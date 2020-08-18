@@ -10,6 +10,14 @@
   font-weight: lighter;
 }
 
+.cocktail-content p {
+  color: #303030;
+}
+
+.cocktail-content h2 {
+  color: #F5584E;
+}
+
 .cocktail-content-sections {
   margin: 24px 0;
 }
@@ -17,3 +25,13 @@
 .destroy_dose {
   color: #F5584E;
 }
+
+.icons {
+  display: flex;
+  color: #303030;
+}
+
+.icons-time {
+  margin: 0 24px;
+}
+

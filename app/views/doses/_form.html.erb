@@ -4,6 +4,10 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
     <%= f.input :description %>
     <%= f.association :ingredient %>
-    <%= f.button :submit, { class: "btn btn-outline-success" } %>   <%= link_to 'Back to overview', cocktail_path(@cocktail), { class: "btn btn-outline-success" } %>
+
+    <div class="btn-next-to-each-other">
+      <%= f.button :submit, class:"btn-pink" %>
+      <%= link_to '< Back to cocktail', cocktail_path(@cocktail), class:"btn-pink-outline" %>
+    </div>
 <% end %>
 

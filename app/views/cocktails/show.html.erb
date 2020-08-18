@@ -8,11 +8,15 @@
     <div class="cocktail-content">
       <h2><%= @cocktail.name.upcase %></h2>
 
-      <%= @cocktail.prep_time %>
-      <i class="far fa-clock"></i>
-      <% if @cocktail.alcohol == true %>
-        <i class="fas fa-percent"></i>
-      <% end %>
+      <div class="icons">
+        <% if @cocktail.alcohol == true %>
+          <i class="fas fa-percent"></i>
+        <% end %>
+
+        <div class="icons-time">
+          <i class="far fa-clock"> <%= @cocktail.prep_time %>(min)</i>
+        </div>
+      </div>
 
       <div class="cocktail-content-sections">
         <p>DESCRIPTION</p>
@@ -39,10 +43,10 @@
         <%= @cocktail.instruction %>
       </div>
 
-      <div class="cocktail-content-btn">
-        <%= link_to 'Add ingredient', new_cocktail_dose_path(@cocktail), class:"btn-pink" %>
-        <%= link_to 'Back to overview', cocktails_path, class:"btn-pink-outline" %>
+      <div class="btn-next-to-each-other">
+        <%= link_to '+ Add ingredient', new_cocktail_dose_path(@cocktail), class:"btn-pink" %>
+        <%= link_to '< Back to overview', cocktails_path, class:"btn-pink-outline" %>
+      </div>
     </div>
-  </div>
   </div>
 </div>

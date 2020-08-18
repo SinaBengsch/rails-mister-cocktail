@@ -1,4 +1,16 @@
-<div class="container">
-  <h1>Add a ingredient</h1>
-  <%= render 'form', dose: @dose %>
-<div>
+<div class="container-basic">
+  <div class="form-basic">
+    <div>
+      <h2>Add ingredient to <%= @cocktail.name  %></h2>
+      <p><em>List of previous added ingredients:</em></p>
+      <% @cocktail.doses.each do |dose| %>
+        <li>
+          <td><%= dose.description %></td>
+          <td><%= dose.ingredient.name %></td>
+        </li>
+      <% end %>
+    </div>
+    <br>
+    <%= render 'form', dose: @dose %>
+  </div>
+</div>

@@ -20,6 +20,7 @@
   border: 1px solid #F5584E;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   padding: 8px 24px;
+  margin: 0 8px;
   border-radius: 4px;
   transition: 0.3s;
 }
@@ -28,4 +29,9 @@
   text-decoration: none;
   background-color: #D9625B;
   color: white;
+}
+
+.btn-next-to-each-other {
+  display: flex;
+  flex-direction: row;
 }
