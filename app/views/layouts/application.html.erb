@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsMisterCocktail</title>
+    <title>CocktailHour</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +12,12 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= yield %>
+    <div class="page-container">
+      <div class="content-wrapper">
+        <%= render 'shared/navbar' %>
+        <%= yield %>
+        <%= render 'shared/footer'  %>
+      </div>
+    </div>
   </body>
 </html>
