@@ -41,7 +41,23 @@
   border-radius: 6px;
 }
 .card-link:hover {
-  opacity: 0.6;
+  opacity: 0.2;
+}
+
+.card:hover .card-description h2 {
+  color: white;
+}
+
+.card:hover .card-description i {
+  color: white;
+}
+
+.card:hover .card-description p {
+  color: white;
+}
+
+.card:hover {
+  background: #F5584E;
 }
 
 .card-big {
