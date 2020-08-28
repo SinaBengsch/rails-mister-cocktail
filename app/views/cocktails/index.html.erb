@@ -11,7 +11,8 @@
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <div class="card">
-       <img src="https://picsum.photos/id/56/2880/1920" alt="placeholder">
+        <img src="https://picsum.photos/id/56/2880/1920" alt="placeholder">
+
         <div class="card-description">
           <div class="card-title">
             <h2><%= cocktail.name.upcase %></h2>
@@ -19,7 +20,8 @@
           </div>
           <p><%= cocktail.description %></p>
         </div>
-          <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+
+        <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
       </div>
     <% end %>
   </div>
