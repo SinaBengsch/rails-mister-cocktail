@@ -31,6 +31,22 @@
   color: white;
 }
 
+.btn-pink-outline-icon {
+  text-decoration: none;
+  color: #F5584E;
+  border: 1px solid #F5584E;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  padding: 6px 24px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.btn-pink-outline-icon:hover {
+  text-decoration: none;
+  background-color: #D9625B;
+  color: white;
+}
+
 .btn-next-to-each-other {
   display: flex;
   flex-direction: row;
