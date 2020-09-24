@@ -6,6 +6,10 @@ class CocktailsController < ApplicationController
     @cocktails = Cocktail.all
   end
 
+  def search
+    @cocktails = Cocktail.where("name LIKE ?", "%" + params[:q] + "%")
+  end
+
   def show
     @cocktail = Cocktail.find(params[:id])
   end
